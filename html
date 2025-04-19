@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-based Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-800 text-white">
+
+    <div class="music-player">
+        <div class="album-art">
+            <img id="album-img" src="img/album1.jpg" alt="Album Art">
+        </div>
+
+        <div class="controls">
+            <button id="prev" class="control-btn">Prev</button>
+            <button id="playPause" class="control-btn">Play</button>
+            <button id="next" class="control-btn">Next</button>
+        </div>
+
+        <div class="track-info">
+            <p id="song-title">Song Title</p>
+            <p id="artist-name">Artist Name</p>
+        </div>
+
+        <div class="progress">
+            <input type="range" id="progress-bar" value="0" max="100">
+            <span id="time">0:00</span> / <span id="duration">3:30</span>
+        </div>
+
+        <div class="volume">
+            <input type="range" id="volume-bar" value="100" max="100">
+        </div>
+
+        <div class="lyrics">
+            <p id="lyrics-text">Lyrics will appear here...</p>
+        </div>
+
+        <div class="playlist">
+            <ul id="playlist">
+                <!-- Playlist songs will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
