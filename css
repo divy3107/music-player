@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.music-player {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.album-art img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.control-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.control-btn:hover {
+    background-color: #444;
+}
+
+.progress input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#lyrics-text {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+#playlist li {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 5px;
+}
+
+#playlist li:hover {
+    background-color: #555;
+}
